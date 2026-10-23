@@ -3,7 +3,7 @@
 Beat'em up d'arcade en **HTML5 / JavaScript pur** (un seul fichier, aucune dépendance), jouable au clavier sur ordinateur et au tactile sur smartphone.
 4 stages, 4 héros, un boss par stage, deux styles graphiques au choix.
 
-> **Jouer en ligne** : `https://<ton-compte>.github.io/dino-rampage/` (après activation de GitHub Pages, voir plus bas)
+> **Jouer en ligne** : https://byjpe.github.io/Dinorampage/
 
 | Menu (moderne) | Choix du héros |
 |---|---|

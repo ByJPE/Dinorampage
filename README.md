@@ -46,27 +46,9 @@ Astuces : maintenir une direction fait courir le héros ; COUP pendant la course
 
 ## Lancer en local
 
-```bash
-git clone https://github.com/<ton-compte>/dino-rampage.git
-cd dino-rampage
-python3 -m http.server 8000   # puis ouvrir http://localhost:8000
 ```
 
-Le fichier `index.html` peut aussi être ouvert directement dans un navigateur.
-
-## Publier sur GitHub Pages
-
-Le workflow `.github/workflows/pages.yml` publie le site à chaque push sur `main`.
-Dans le dépôt : **Settings → Pages → Build and deployment → Source : GitHub Actions**.
-
-## Tests
-
-Un test de fumée lance le jeu dans Chromium (Playwright), simule des parties pour chaque héros dans les deux styles et échoue en cas d'erreur JavaScript :
-
-```bash
-pip install playwright && playwright install chromium
-python3 tests/smoke_test.py
-```
+Le fichier `index.html` peut aussi être ouvert directement dans un navigateur 
 
 ## Structure
 

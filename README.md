@@ -3,7 +3,7 @@
 Beat'em up d'arcade en **HTML5 / JavaScript pur** (un seul fichier, aucune dépendance), jouable au clavier sur ordinateur et au tactile sur smartphone.
 4 stages, 4 héros, un boss par stage, deux styles graphiques au choix.
 
-> **Jouer en ligne** : https://byjpe.github.io/Dinorampage/
+> **Jouer en ligne** : `https://<ton-compte>.github.io/dino-rampage/` (après activation de GitHub Pages, voir plus bas)
 
 | Menu (moderne) | Choix du héros |
 |---|---|
@@ -46,9 +46,27 @@ Astuces : maintenir une direction fait courir le héros ; COUP pendant la course
 
 ## Lancer en local
 
+```bash
+git clone https://github.com/<ton-compte>/dino-rampage.git
+cd dino-rampage
+python3 -m http.server 8000   # puis ouvrir http://localhost:8000
 ```
 
-Le fichier `index.html` peut aussi être ouvert directement dans un navigateur 
+Le fichier `index.html` peut aussi être ouvert directement dans un navigateur.
+
+## Publier sur GitHub Pages
+
+Le workflow `.github/workflows/pages.yml` publie le site à chaque push sur `main`.
+Dans le dépôt : **Settings → Pages → Build and deployment → Source : GitHub Actions**.
+
+## Tests
+
+Un test de fumée lance le jeu dans Chromium (Playwright), simule des parties pour chaque héros dans les deux styles et échoue en cas d'erreur JavaScript :
+
+```bash
+pip install playwright && playwright install chromium
+python3 tests/smoke_test.py
+```
 
 ## Structure
 
